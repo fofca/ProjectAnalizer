@@ -5,7 +5,6 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-
         string command = GetCommandLineArugments(args);
         string fileLocation = Assembly.GetExecutingAssembly().Location;
         fileLocation = Path.GetDirectoryName(fileLocation);
@@ -26,8 +25,6 @@ internal class Program
 
         foreach (string arg in args)
             retVal += arg;
-
-
         return retVal;
     }
 }

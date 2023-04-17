@@ -29,9 +29,7 @@ internal class Programh
 
         foreach (string arg in args)
             retVal += arg;
-
-
         return retVal;
     }
 }
-//лдрдрд
+
