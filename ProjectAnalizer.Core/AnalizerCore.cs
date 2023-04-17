@@ -1,10 +1,9 @@
 ﻿namespace ProjectAnalizer.Core
 {
-    public static class Class1
+    public static class AnalizerCore
     {
 
         public static string AllFiles(this String str)
-
         {
             try
             {
@@ -23,7 +22,6 @@
             {
                 return "Неверно введен путь к папке";
             }
-
         }
         public static string InterfaceFiles(this String str)
         {
@@ -31,15 +29,13 @@
             {
                 int info = 0;
                 DirectoryInfo di = new(str);
-                string s = "";
                 foreach (var fi in di.GetFiles("*.cs", SearchOption.AllDirectories))
                 {
-                    s = File.ReadAllText(fi.Directory + @"\" + fi.Name);
-                    if (s.Contains(" internal interface ") == true)
+                    var file = File.ReadAllText(fi.Directory + @"\" + fi.Name);
+                    if (file.Contains(" internal interface ") == true)
                     {
                         info += 1;
                     }
-
 
                 }
                 return "Кол-во фйлов интерфейсов: " + info.ToString();
@@ -56,19 +52,14 @@
             try
             {
                 int info = 0;
-
                 DirectoryInfo di = new(str);
-                string s = "";
-
                 foreach (var fi in di.GetFiles("*.cs", SearchOption.AllDirectories))
                 {
-                    s = File.ReadAllText(fi.Directory + @"\" + fi.Name);
-                    if (s.Contains(" class ") == true)
+                    var file = File.ReadAllText(fi.Directory + @"\" + fi.Name);
+                    if (file.Contains(" class ") == true)
                     {
                         info += 1;
                     }
-
-
                 }
                 return "Кол-во файлов классов: " + info.ToString();
             }
@@ -76,35 +67,30 @@
             {
                 return "Неверно введен путь к папке";
             }
-
         }
         public static string EnumFiles(this String str)
         {
             try
             {
                 int info = 0;
-
                 DirectoryInfo di = new(str);
-                string s = "";
-
+               
                 foreach (var fi in di.GetFiles("*.cs", SearchOption.AllDirectories))
                 {
-                    s = File.ReadAllText(fi.Directory + @"\" + fi.Name);
-                    if (s.Contains(" enum ") == true)
+                  var file = File.ReadAllText(fi.Directory + @"\" + fi.Name);
+                    if (file.Contains(" enum ") == true)
                     {
                         info += 1;
                     }
-
-
                 }
                 return "Кол-во файлов enum: " + info.ToString();
             }
             catch (Exception)
             {
-
                 return "Неверно введен путь к папке";
             }
 
         }
+
     }
 }
