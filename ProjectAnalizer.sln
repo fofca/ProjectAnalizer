@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectAnalizer", "ProjectAnalizer\ProjectAnalizer.csproj", "{FF824C25-1E18-46BE-8255-7428BEFD92ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectAnalizer", "ProjectAnalizer\ProjectAnalizer.csproj", "{FF824C25-1E18-46BE-8255-7428BEFD92ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectAnalizer.Core", "ProjectAnalizer.Core\ProjectAnalizer.Core.csproj", "{02CB4E4D-2616-452F-992F-283C5CC729CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectAnalizer.Core", "ProjectAnalizer.Core\ProjectAnalizer.Core.csproj", "{02CB4E4D-2616-452F-992F-283C5CC729CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectAnalizer.Cli", "ProjectAnalizer.Cli\ProjectAnalizer.Cli.csproj", "{F6D5B869-8364-42EC-8936-B24ECE60EE65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectAnalizer.Cli", "ProjectAnalizer.Cli\ProjectAnalizer.Cli.csproj", "{F6D5B869-8364-42EC-8936-B24ECE60EE65}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Input", "Input", "{53A36B77-96FE-4CBD-99B0-329F67E35075}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -2,7 +2,6 @@
 {
     public static class AnalizerCore
     {
-
         public static string AllFiles(this String str)
         {
             try
@@ -42,10 +41,8 @@
             }
             catch (Exception)
             {
-
                 return "Неверно введен путь к папке";
             }
-
         }
         public static string ClassFiles(this String str)
         {
